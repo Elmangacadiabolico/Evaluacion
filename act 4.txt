@@ -1,0 +1,19 @@
+share:/?KYDwLsB2AmDOAEA5A9tYAodA3AhgJ3gBlkBjHMAS2UngF54BtANWBLGTwCYAKAVgBp4AZgCUglmw48ALIIDsY+BPZduc+YuVTuANkEBGEQF1MAMwCukEvFjmAtsTKVqsbvjwiAXOni-4uAls7AE06eAAGHz8Am3sADTDIqN9TDnhzACMKMhIqGgoad28-EtiQ+ABqekzsnFzqADoAT2TSoISq9KycvIaQTBK8YDBzPBotVXbBIOCRM0trAH0hnGgm7i9WmLtkWDA8fDCgx3I81xPnSDmSgAc8ArBuACIJzifBHb2Dj3QgA
+
+extends Node
+
+var Location = [Vector2(5, 3), Vector2(4, 7), Vector2(7, 7), Vector2(6, 1)]
+
+func sumLocations(arr):
+    var sumY = 0
+    var sumX = 0
+
+    for ubicacion in arr:
+        sumY += ubicacion.y
+        sumX += ubicacion.x
+
+    return Vector2(sumX, sumY)
+
+func _ready():
+    var mostrar = sumLocations(Location)
+    print("Vector2", mostrar)

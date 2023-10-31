@@ -1,0 +1,21 @@
+share:/?KYDwLsB2AmDOAEA5A9tYAodA3AhgJ3gEtIsoxk8BPeAXngG915n4AiSHAW2FYC42AUgFcANoRyRWAGiYtWsIXg7c+bAIIjceYLGmzmrAObIRO1QBYZLNhC67+ja9dYAHE8kjjVARitODakKwYHg4Yjg+fv6sAMZ4yDgxXvwATFHwAL7oWegAZkKQMfAAEoTBFJQAsgXQ4iIAFMSkkORUAJS8+vDaYIqQbCicAEba-KzwANREJGQVANrsXDwAupNsUvBqLsAiYtDIY2tNs1QLCkpLrKtT0vAA4iY6h1PBeI0zLfNGj7rLbZj5QrwAD62hw0Eo9Q6XS08AAFmVWuJaCVERVqjA6u9mq1KP9rC48MQwPUEeUiTh-kA
+
+extends Node
+
+var inventory = {
+    "name": "Julian",
+    "surname": "Alvares",
+    "goles": 4,
+    "teams": 	"polonia 1 gol ,
+    			Australia 1 gol ,
+    			croacia 2 gol "
+    
+}
+
+func HistoryMundial(inventory):
+    return  inventory["surname"] + " " + inventory["name"] +   ", Goles: " + str(inventory["goles"]) + " 
+" +str(inventory["teams"])
+
+func _ready():
+    var historia = HistoryMundial(inventory)
+    print(historia)

@@ -1,0 +1,17 @@
+share:/?KYDwLsB2AmDOAEA5A9tYAoAbgQwE70gFcBbAI2FwQF54BtABgBoBGRgJkYGZGAWRgVkYA2ALroAZoUgBjeAGUS2GMgD6AS2IAHPMFgAKPLgCUWPPADyYABYUAatgA2mQrvg1aYgJDjk+Q8ABzB2QENUh4XCUA4D0DXFwAKjYjAFpmBKSTeGyLaztHZ10AOmxNTShoONxA4NgTdGqwQlxww3QJKVkVauxoAE89IwAudBycfABJLVwNNXwaBWIlaFUNbWr9IjIKOtGczRnIMD14KYPZ4yA
+
+
+extends Node
+var numbers = [0,1,2,3,4,5,6]
+func Sumando_impares(arr)
+var OtherValvues = []
+	for arreglos in range((arr*2)-1**2)
+    OtherValvues.append(arreglos)
+
+return arr
+
+func _ready():
+   var Imprimir = Sumando_impares(numbers)
+    print( Imprimir)
+
+    //creo que esta bien
